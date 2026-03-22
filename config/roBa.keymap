@@ -144,5 +144,22 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
+/ {
+    combos { ... };
+
+    macros { ... };
+
+    behaviors { ... };
+
+    keymap {
+        ...
+    };
+
+    /* 👇これを追加 */
+    mkp_input_listener {
+        compatible = "zmk,input-listener";
+        input-processors = <&zip_temp_layer 4 150>;
+    };
+};
     };
 };
