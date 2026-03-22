@@ -153,5 +153,4 @@
 &mkp_input_listener {
     input-processors = <&zip_temp_layer MOUSE 250>;
 
-    };
 };
