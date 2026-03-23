@@ -177,21 +177,21 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '4':
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&to_layer_0 Q'
+  - '&to_layer_0 W'
+  - '&to_layer_0 E'
+  - '&to_layer_0 R'
+  - '&to_layer_0 T'
+  - '&to_layer_0 Y'
+  - '&to_layer_0 U'
   - Ctl+T
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&to_layer_0 O'
+  - SCROLL
+  - '&to_layer_0 A'
+  - '&to_layer_0 S'
+  - '&to_layer_0 D'
+  - '&to_layer_0 F'
+  - '&to_layer_0 G'
   - {t: ▽, type: trans}
   - Ctl+V
   - Ctl+Sft+TAB
@@ -199,14 +199,14 @@ layers:
   - '&mkp MB3'
   - '&mkp MB2'
   - Ctl+TAB
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&to_layer_0 Z'
+  - '&to_layer_0 X'
+  - '&to_layer_0 C'
+  - '&to_layer_0 V'
+  - '&to_layer_0 B'
   - {t: ▽, type: trans}
   - Ctl+C
-  - {t: ▽, type: trans}
+  - '&to_layer_0 N'
   - '&mkp MB4'
   - Ctl+W
   - '&mkp MB5'
@@ -214,9 +214,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&to_layer_0 LANG2'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&to_layer_0 LANG1'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
