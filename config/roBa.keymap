@@ -7,7 +7,6 @@
 // #includeのあとのあたりにスクロール量変更の定義を追記
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
-
 #define MOUSE 4 // 各自のマウスレイヤーに合わせて設定
 
 &mt {
@@ -71,16 +70,17 @@
         };
     };
 
-// combosやmacrosと同じ階層に以下のbihaviorsを追記
-// スクロール方向を逆にしたい場合は <&msc SCRL_DOWN> と <&msc SCRL_UP> を入れ替えてください
+    // combosやmacrosと同じ階層に以下のbihaviorsを追記
+    // スクロール方向を逆にしたい場合は <&msc SCRL_DOWN> と <&msc SCRL_UP> を入れ替えてください
 
-     behaviors {
-       encoder_msc_down_up: encoder_msc_down_up {
-           compatible = "zmk,behavior-sensor-rotate";
-           label = "ENCODER_MSC_DOWN_UP";
-           #sensor-binding-cells = <0>;
-           bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-           tap-ms = <20>;
+    behaviors {
+        encoder_msc_down_up: encoder_msc_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_DOWN_UP";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            tap-ms = <20>;
         };
 
         lt_to_layer_0: lt_to_layer_0 {
@@ -138,10 +138,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &trans           &trans    &kp LC(T)  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp LC(V)  &kp LC(LS(TAB))  &mkp MB1  &mkp MB3   &mkp MB2  &kp LC(TAB)
-&trans  &trans  &trans  &trans  &trans  &trans      &kp LC(C)  &trans           &mkp MB4  &kp LC(W)  &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans                                          &trans
+&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R      &to_layer_0 T                                    &to_layer_0 Y    &to_layer_0 U  &kp LC(T)  &to_layer_0 O  &mo 5
+&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F      &to_layer_0 G  &trans                 &kp LC(V)  &kp LC(LS(TAB))  &mkp MB1       &mkp MB3   &mkp MB2       &kp LC(TAB)
+&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V      &to_layer_0 B  &trans                 &kp LC(C)  &to_layer_0 N    &mkp MB4       &kp LC(W)  &mkp MB5       &trans
+&trans         &trans         &trans         &to_layer_0 LANG2  &trans         &to_layer_0 LANG1      &trans     &trans                                                    &trans
             >;
         };
 
