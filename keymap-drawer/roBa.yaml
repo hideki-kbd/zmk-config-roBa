@@ -27,7 +27,7 @@ layers:
   - X
   - C
   - V
-  - B
+  - {t: B, h: '6'}
   - TAB
   - ;
   - N
@@ -36,14 +36,14 @@ layers:
   - .
   - {t: /, h: LEFT SHIFT}
   - LCTRL
-  - LEFT WIN
+  - {t: ESCAPE, h: LEFT WIN}
   - LEFT ALT
   - {t: LANG2, h: '6'}
   - {t: SPACE, h: NUM}
   - {t: LANGUAGE 1, h: ARROW}
   - BACKSPACE
   - {t: ENTER, h: SYMBOLS}
-  - DEL
+  - Sft+Gui+S
   SYMBOLS:
   - {t: ▽, type: trans}
   - '&'
@@ -52,8 +52,8 @@ layers:
   - )
   - (
   - )
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - _
+  - ^
   - {t: ▽, type: trans}
   - '~'
   - $
@@ -105,7 +105,7 @@ layers:
   - KP 6
   - '*'
   - Ctl+Alt+KP 0
-  - _
+  - (
   - '!'
   - F4
   - F5
@@ -117,11 +117,11 @@ layers:
   - KP 3
   - .
   - '='
-  - {t: ▽, type: trans}
+  - )
   - ESC
-  - F7
-  - F8
-  - F9
+  - F1
+  - F2
+  - F3
   - F12
   - {t: ▽, type: trans}
   - KP 0
@@ -177,20 +177,20 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '4':
-  - '&to_layer_0 Q'
+  - ESC
   - '&to_layer_0 W'
-  - '&to_layer_0 E'
+  - UP
   - '&to_layer_0 R'
   - '&to_layer_0 T'
   - '&to_layer_0 Y'
-  - '&to_layer_0 U'
+  - Ctl+PG UP
   - Ctl+T
-  - '&to_layer_0 O'
+  - Ctl+PG DN
   - SCROLL
-  - '&to_layer_0 A'
-  - '&to_layer_0 S'
-  - '&to_layer_0 D'
-  - '&to_layer_0 F'
+  - LSHFT
+  - LEFT
+  - DOWN
+  - RIGHT
   - '&to_layer_0 G'
   - {t: ▽, type: trans}
   - Ctl+V
@@ -199,7 +199,7 @@ layers:
   - '&mkp MB3'
   - '&mkp MB2'
   - Ctl+TAB
-  - '&to_layer_0 Z'
+  - LCTRL
   - '&to_layer_0 X'
   - '&to_layer_0 C'
   - '&to_layer_0 V'
@@ -291,7 +291,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - '&bootloader'
   - {t: ▽, type: trans}
@@ -302,7 +302,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
